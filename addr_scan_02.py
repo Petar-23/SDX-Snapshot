@@ -7,7 +7,7 @@ from web3 import Web3, HTTPProvider
 w3 = Web3(HTTPProvider('https://rpc.swapdex.net'))
 addr_lst = []
 header = ['from', 'to']
-block_range = 10000000
+block_range = 1000000
 for block in tqdm(range(500000, block_range)):
     # print(block)
     try:

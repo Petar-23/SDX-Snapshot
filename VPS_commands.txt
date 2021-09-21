@@ -1,0 +1,15 @@
+1) sudo apt-get update
+2) sudo apt-get install -y python3-pip
+3) pip install numpy
+4) pip install tqdm
+5) pip install web3
+6) git clone https://github.com/Petar-23/SDX-Snapshot
+7) cd SDX-Snapshot
+8) tmux new -s addr_scan_0x
+9) python3 addr_scan_0x.py
+
+
+To exit
+
+cntr+b
+:detach

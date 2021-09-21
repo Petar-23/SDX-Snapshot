@@ -7,8 +7,8 @@ from web3 import Web3, HTTPProvider
 w3 = Web3(HTTPProvider('https://rpc.swapdex.net'))
 addr_lst = []
 header = ['from', 'to']
-block_range = 1500000
-for block in tqdm(range(1400000, block_range)):
+block_range = 2200000
+for block in tqdm(range(2100000, block_range)):
     # print(block)
     try:
         # Get transaction by block
@@ -29,5 +29,5 @@ for block in tqdm(range(1400000, block_range)):
 addr_lst = list(dict.fromkeys(addr_lst))
 
 # Save list of wallets as csv file
-np.savetxt("wallet_addr_7.csv", addr_lst, delimiter=", ", fmt='% s')
+np.savetxt("wallet_addr_14.csv", addr_lst, delimiter=", ", fmt='% s')
 print(addr_lst)
